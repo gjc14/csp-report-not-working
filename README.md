@@ -1,3 +1,16 @@
+# CSP Report is Not Working
+
+CSP violation report will be sent to the endpoint once violation triggered. Two configurations needed:
+
+1. Content-Security-Policy: …; report-to name-of-endpoint
+2. Reporting-Endpoints: name-of-endpoint="https://example.com/csp-reports"
+
+Althought errors shows in console, there are **NO NETWORK REQUEST**.
+
+Reference: [MDN CSP report-to](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/report-to)
+
+---
+
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.
